@@ -1,0 +1,12 @@
+{
+    "name": "instacoffee-app",
+    "version": "0.0.1",
+    "private": true, 
+    "dependencies": {
+        "express": ">=0.0.1",
+        "jade": ">=0.0.1",
+        "stylus": ">=0.0.1",
+        "underscore": ">=0.0.1",
+        "connect-redis": ">= 0.0.1"
+    }
+}
