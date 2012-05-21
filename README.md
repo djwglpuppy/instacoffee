@@ -1,6 +1,6 @@
 #Instant Coffee
 
-This is just a msimple boilerplate app to help get me started on projects using coffeescript
+This is just a simple boilerplate app to help get me started on projects using coffeescript
 
 Just grab it and run `npm install`
 
