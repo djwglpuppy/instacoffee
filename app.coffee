@@ -14,10 +14,9 @@ app.configure ->
     @set('view engine', 'jade')
 
 app.configure "development", ->
-    @use(require("stylus").middleware({
-        src: __dirname + "/precompiled"
-        dest: __dirname + "/static"
-        compress: true
+    @use(require('connect-assets')({
+        src: __dirname + "/precompiled/"
+        buildDir: __dirname + "/static/"
     }))
     @use(express.static(__dirname + '/static'))
     @use(this.router)

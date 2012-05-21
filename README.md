@@ -19,3 +19,8 @@ Just grab it and run `npm install`
 * Stylus
 * Underscore
 * connect-redis
+* connect-assets
+
+###Connect Assets
+
+Stylus files and Coffee Script files are getting compiled in the precompiled folder
