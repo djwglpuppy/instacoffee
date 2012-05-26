@@ -14,10 +14,19 @@ app.configure ->
     @set('view engine', 'jade')
 
 app.configure "development", ->
-    @use(require('connect-assets')({
-        src: __dirname + "/precompiled/"
-        buildDir: __dirname + "/static/"
+
+    @use(require("coffee-middle")({
+        src: __dirname + "/precompiled/js"
+        dest: __dirname + "/static/js"
+        browserReload: true
     }))
+
+    @use(require("stylus").middleware({
+        src: __dirname + "/precompiled"
+        dest: __dirname + "/static"
+        compress: true
+    }))
+
     @use(express.static(__dirname + '/static'))
     @use(this.router)
         

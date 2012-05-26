@@ -6,9 +6,8 @@
         "express": ">=0.0.1",
         "jade": ">=0.0.1",
         "stylus": ">=0.0.1",
-        "coffee-script": ">=0.0.1",
+        "coffee-middle": ">=0.0.1beta",
         "underscore": ">=0.0.1",
-        "connect-redis": ">= 0.0.1",
-        "connect-assets": ">= 0.0.1"
+        "connect-redis": ">= 0.0.1"
     }
 }
